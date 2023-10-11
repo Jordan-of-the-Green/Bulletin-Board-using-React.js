@@ -1,0 +1,46 @@
+### Test 'Hello World'
+GET http://localhost:3000/api HTTP/1.1
+
+##############################################
+
+### Create User Username/Password to Database (This Works :)
+POST http://localhost:3000/api/users/signup HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Jordan",
+    "password": "Green"
+}
+
+### Login User Username/Password to Database
+POST http://localhost:3000/api/users/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "Jordan",
+    "password": "Green"
+}
+###
+GET http://localhost:3000/api HTTP/1.1
+
+##############################################
+
+### Create UserPost (formerly Fruit) in the Database
+POST http://localhost:3000/api/userposts HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvcmRhbiIsInVzZXJpZCI6IjY1MjMyYTkyYjc1MmMxMGFjNjM2ZmQwZCIsImlhdCI6MTY5Njg4NTExOSwiZXhwIjoxNjk2ODg4NzE5fQ.vNVAmXiyuVZsNJ597LwX9G3gOlWiXeY5-Mh4XW4XMCA
+
+{
+    "id": "500",
+    "name": "Surfing on the Beach"
+}
+
+### Delete UserPost from the Database
+DELETE http://localhost:3000/api/userposts/6524699ea1373f412f27be13 HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvcmRhbiIsInVzZXJpZCI6IjY1MjMyYTkyYjc1MmMxMGFjNjM2ZmQwZCIsImlhdCI6MTY5Njg4NTE5NywiZXhwIjoxNjk2ODg4Nzk3fQ.MQ6f5Uc56PLmcQ_ppasuqr_E2n88kW0Yno2z45U_zmo
+
+### Get User Posts
+GET http://localhost:3000/api/userposts/all HTTP/1.1
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvcmRhbiIsInVzZXJpZCI6IjY1MjMyYTkyYjc1MmMxMGFjNjM2ZmQwZCIsImlhdCI6MTY5NjgwNTE1MCwiZXhwIjoxNjk2ODA4NzUwfQ.peQJAejAXRBHXl5m4DexB5I9Tnc6fRK5GPZBQioS1EM
