@@ -1,14 +1,9 @@
 # Bulletin-Board-using-React.js
-Backend for a bulletin board using React.js
 
-Jordan Green - st10083222 - APDS7311- POE - ReadMe
+# Project Overview:  
+This project is a bulletin board system developed for the National Government, aimed at facilitating the sharing of important issues and information through posts. The system includes features for user registration, login, post-creation, deletion, and retrieval. It's built with security in mind, utilizing SSL for all API calls, implementing proper Cross-Origin Resource Sharing (CORS), and securely storing and comparing passwords using bcrypt.
 
-   * This is a bulletin board created for the National Government with the purpose of sharing issues via post
-
-Project Overview ~
-This project is a bulletin board system developed for the National Government, aimed at facilitating the sharing of important issues and information through posts. The system includes features for user registration, login, post creation, deletion, and retrieval. It's built with security in mind, utilizing SSL for all API calls, implementing proper Cross-Origin Resource Sharing (CORS), and securely storing and comparing passwords using bcrypt.
-
-How to Install and Run the Project:
+# How to Install and Run the Project:
 (Visual Studio Code)
 
 (Prerequisites)
@@ -41,5 +36,6 @@ Additional Notes ~
 If you encountered issues with npm i bcrypt, note that there might be compatibility or installation issues with bcrypt. In my project, I used bcryptjs as an alternative library for password hashing. This should work for you without any issues.
 Thank you for using the National Government Bulletin Board system. If you have any questions or need further assistance, please feel free to reach out.
 
-Error feautures: npm i bcrypt would not work so I had to install bcrypjs to hash the password.
+# Error features:  
+npm i bcrypt would not work so I had to install bcrypjs to hash the password.
 
